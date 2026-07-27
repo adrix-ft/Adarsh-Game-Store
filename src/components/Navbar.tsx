@@ -222,7 +222,7 @@ export default function Navbar() {
                         No titles found matching "{searchQuery}". Ask us directly and we'll get it for you!
                       </p>
                       <a 
-                        href={`https://wa.me/916001189280?text=${encodeURIComponent(`Hey, I am looking for a game not found in your store: "${searchQuery}"`)}`}
+                        href={`https://wa.me/917906568743?text=${encodeURIComponent(`Hey, I am looking for a game not found in your store: "${searchQuery}"`)}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-500 text-white px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider transition-colors shadow-lg"
