@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react';
 import { ShieldCheck, ExternalLink } from 'lucide-react';
 import { createClient } from '@supabase/supabase-js';
 
-const proofSupabase = createClient(
-  'https://johifoztsilallnzksva.supabase.co', 
-  'sb_publishable_DmzSijXJfTj-F4hvqkOKGg_qa9zuN2m'
-);
+const proofSupabaseUrl = import.meta.env.VITE_PROOF_SUPABASE_URL;
+const proofSupabaseKey = import.meta.env.VITE_PROOF_SUPABASE_KEY;
+
+const proofSupabase = createClient(proofSupabaseUrl, proofSupabaseKey);
 
 interface ProofSectionProps {
   onSelectImage: (url: string) => void;

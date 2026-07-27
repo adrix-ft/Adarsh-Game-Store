@@ -4,8 +4,8 @@ import { motion, AnimatePresence } from 'motion/react';
 import { getGameCoverUrl } from '../utils/image';
 import { useState } from 'react';
 
-const STORE_WHATSAPP_NUMBER = "917906568743"; // Replace with your store's WhatsApp number
-const API_BASE_URL = 'https://amin-game-store-backend.onrender.com';
+const STORE_WHATSAPP_NUMBER = "917906568743";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://amin-game-store-backend.onrender.com';
 
 export default function CartDrawer() {
   const { cart, isCartOpen, setIsCartOpen, removeFromCart, clearCart } = useStore();

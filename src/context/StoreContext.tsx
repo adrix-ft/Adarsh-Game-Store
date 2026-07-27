@@ -58,8 +58,7 @@ type StoreContextType = {
 const StoreContext = createContext<StoreContextType | undefined>(undefined);
 
 // Pointing directly to your live Render backend URL
-const API_BASE_URL = 'https://amin-game-store-backend.onrender.com';
-
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://amin-game-store-backend.onrender.com';
 export const StoreProvider = ({ children }: { children: React.ReactNode }) => {
   const [cart, setCart] = useState<CartItem[]>(() => {
     try {
